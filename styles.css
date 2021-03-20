@@ -1,0 +1,8 @@
+.form__name,.display_name{
+    display: none;
+}
+
+
+.showing {
+    display: block;
+}
