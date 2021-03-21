@@ -12,6 +12,7 @@
 } */
 .display_question{
     font-family: 'Courier Prime', monospace;
+    /* color:white; */
 }
 .form__name input{
     
@@ -23,6 +24,7 @@
     background-color: #f2f3f7;
     border :none;
     font-size:35px;
+
 }
 .form__name input::placeholder{
     color: black;
