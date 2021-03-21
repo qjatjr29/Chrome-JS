@@ -4,7 +4,7 @@ var audio = new Audio();
 
 
 function playBgm() {
-    const randomNum = Math.floor(Math.random() * BGM_NUMBER);
+    let randomNum = Math.floor(Math.random() * BGM_NUMBER);
     // event.preventDefault();
     console.log("o")
     console.log(randomNum);
@@ -13,6 +13,8 @@ function playBgm() {
     BGM_button.classList.add("playing");
     BGM_button.innerHTML = "PAUSE";
     audio.addEventListener("ended", function () {
+        randomNum = Math.floor(Math.random() * BGM_NUMBER);
+        this.src = `music/${randomNum + 1}.mp3`;
         this.currentTime = 0;
         this.play();
     }, false);
