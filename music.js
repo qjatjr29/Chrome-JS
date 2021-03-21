@@ -21,6 +21,8 @@ function pauseBgm() {
     console.log("x")
     audio.pause();
     BGM_button.innerHTML = "BGM";
+    // BGM_button.innerHTML = `<i class="fas fa-music fa-2x"></i>`;
+
     BGM_button.classList.remove("playing");
 }
 

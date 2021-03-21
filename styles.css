@@ -4,10 +4,10 @@
 @import "css/weather.css";
 @import "css/clock.css";
 @import "css/toDo.css";
-
+@import "css/bg.css";
 
 body{
-    background: linear-gradient(to bottom, #fddbd9, #ddd6f3);
+    /* background: linear-gradient(to bottom, #fddbd9, #ddd6f3); */
     /* width:100vw; */
     height: 100vh;
 }
