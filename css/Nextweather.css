@@ -1,0 +1,40 @@
+.function__weather-nextday{
+    font-family: 'Aldrich', sans-serif;
+    width:200px;
+    height: 200px;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:5px;
+    box-sizing: border-box;
+}
+
+.A_weather-text{
+    display: flex;
+    /* flex-direction: column; */
+    font-size: 18px;
+    justify-content: space-between;
+}
+.A_weather-text_column{
+    display: flex;
+    flex-direction: column;
+}
+/* .function__weather-nextday img{
+    width:60px;
+    height: 60px;
+} */
+.function__weather-nextday h2{
+    margin:0px;
+}
+.function__weather-nextday h3{
+    margin:10px;
+}
+.A12_weather-feel,.A24_weather-feel{
+    font-size: 15px;
+}
+.A12-icon,.A24-icon{
+    width:80px;
+    height: 80px;
+}

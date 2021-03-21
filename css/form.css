@@ -10,7 +10,11 @@
     background-color: azure;
     border:none;
 } */
+.display_question{
+    font-family: 'Courier Prime', monospace;
+}
 .form__name input{
+    
     width:350px;
     height: 80px;
     text-align: center;
@@ -18,20 +22,24 @@
     border-radius: 20px;
     background-color: #f2f3f7;
     border :none;
-    font-size:25px;
+    font-size:35px;
 }
 .form__name input::placeholder{
     color: black;
-    font-size:20px;
+    font-family: 'Reenie Beanie', cursive;
+    font-size:35px;
 }
 .form__name input:focus,.form__todo input:focus{
+    font-family: 'Courier Prime', monospace;
     outline:none;
 }
 .form__name input:focus::placeholder,.form__todo input:focus::placeholder
 {
+    font-family: 'Courier Prime', monospace;
     color:transparent;
 }
 .form__todo input{
+    font-family: 'Reenie Beanie', cursive;
     width:400px;
     height: 80px;
     text-align: center;
@@ -39,7 +47,7 @@
     background-color: #f2f3f7;
     border :none;
     color:black;
-    font-size:25px;
+    font-size:35px;
 }
 .form__todo input::placeholder{
     color:black;

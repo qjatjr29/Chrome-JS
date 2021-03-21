@@ -5,6 +5,8 @@
 @import "css/clock.css";
 @import "css/toDo.css";
 @import "css/bg.css";
+@import "css/calender.css";
+@import "css/Nextweather.css";
 
 body{
     /* background: linear-gradient(to bottom, #fddbd9, #ddd6f3); */
@@ -34,6 +36,7 @@ body{
 
 
 .function__list{
+    
     width:500px;
     margin-top:65px;
     border-radius: 15px;
@@ -46,10 +49,9 @@ body{
 }
 
 .parent{
-    
     display:grid;
     grid-template-columns: 250px 250px;
-    grid-template-rows: 220px 220px 220px 220px;
+    grid-template-rows: 210px 210px 210px 210px;
     justify-items: center;
     align-items: center;
     box-sizing: border-box;

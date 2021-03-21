@@ -22,17 +22,14 @@
 .BGM{
     display: flex;
     align-items: center;
+
 }
 .BGM span{
-    font-size: 20px;
+    font-size: 15px;
 }
-.BGM_icon{
-    
-    margin-left: 20px;
-   
-    /* background: linear-gradient(to bottom, #ffffff31, #ffeeee31); */
-}
+
 .BGM_button{
+    display: flex;
     width:50px;
     height: 50px;
     border-radius: 15px;
@@ -46,3 +43,9 @@
     outline: none;
 }
 
+.BGM_button i{
+    margin-left:15px;
+}
+.BGM_button i:hover{
+    cursor:grab;
+}

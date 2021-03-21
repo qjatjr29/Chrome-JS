@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+    </style>
     <title>Beomsic's Page</title>
 </head>
 <body>
@@ -11,7 +16,9 @@
             <!-- <span>BGM</span> -->
             <div class="BGM_icon">
                 
-                <button class="BGM_button" value="play">BGM
+                <button class="BGM_button" value="play">
+                    <span>BGM</span>
+                    <i class="fas fa-music"></i>
                 </button>
             </div>
          </div>
@@ -64,52 +71,24 @@
             </div>
         </div>
 
-        <!-- <div class="function__list">
-            <div class="function__list-column">
-                <div class="function__calendar"></div>
-            </div>
-            <div class="function__list-column">
-                <div class="function__weather">
-                    <div class="function__weather-column">
-                        <span class="weather_location"></span>
-                    </div>
-                    <div class="function__weather-column">
-                        <span class="weather-temperature"></span>
-        
-                    </div>
-                    <div class="function__weather-column">
-                        <div class="weather-subtext">
-                            <span class="weather-feelLike"></span>
-                            <span class="weather-humidity"></span>
-                            <span class="weather-main"></span>
-                        </div>
-                        <img src="" alt="">
-                    </div>
-                    
-                </div>
-                <div class="function__clock">
-                    <h1></h1>
-                    <h3></h3>
-                </div>
-            </div>
-            <div class="function__list-column">
-                <div class="function__toDolist">
-                    <ul class="pendinglist">
-                        ToDo List !!
-                    </ul>
-                    <ul class="finishlist">
-                        Finish List <!DOCTYPE html>
-                    </ul>
-                </div>
-            </div>
-        </div> -->
+    
 
         <div class="function__list">
             <div class="outer__box parent">
                 <div class="inner_box1 div1">
                     <div class="calender">
-                        <h1>Calender</h1>
-                    </div>
+                       <div class="calender-header">
+                        <i class="fas fa-chevron-left pre-month"></i>
+                        <div class="today">
+                            <h1></h1>
+                        </div>
+                        <i class="fas fa-chevron-right next-month"></i>
+                       </div>
+                       <div class="calender-day">
+                           
+                       </div>
+                       <div class="calender-date"></div>
+                     </div>
                 </div>
                 <div class="inner_box1 div3">
                     <span>
@@ -125,11 +104,11 @@
                    
                     <div class="function__weather">
                         <div class="function__weather-column">
-                            <span class="weather_location"></span>
+                            <span class="weather_location">Seoul, KR</span>
                         </div>
                         <div class="function__weather-column">
                             <span class="weather-temperature"></span>
-            
+                            <img src="" class="weather_icon">
                         </div>
                         <div class="function__weather-column">
                             <div class="weather-subtext">
@@ -148,9 +127,48 @@
                         <h3></h3>
                     </div>
                 </div>
-                <div class="inner_box1 div2">
-                    <div class="empty">
-                        <h1>Memo</h1>
+                <div class="inner_box2 div2">
+                    <div class="function__weather-nextday">
+                        <div>
+                            <h2 class="nextday12-header"></h2>
+                            <h3 class="A12time"></h3>
+                            <!-- <img src="" class="A12-icon"> -->
+                        </div>
+                        <div class="A_weather-text">
+                            <div class="A_weather-text_column">
+                                <span class="A12_weather-temperature"></span>
+                                <span class="A12_weather-feel"></span>
+                                <span class="A12_weather-main"></span>
+                            </div>
+                            <!-- <span class="A12_weather-temperature"></span>
+                            <span class="A12_weather-feel"></span>
+                            <span class="A12_weather-main"></span> -->
+                            <div>
+                                <img src="" class="A12-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner_box2 div6">
+                    <div class="function__weather-nextday">
+                        <div>
+                            <h2 class="nextday24-header"></h2>
+                            <h3 class="A24time"></h3>
+                            <!-- <img src="" class="A24-icon"> -->
+                        </div>
+                        <div class="A_weather-text">
+                            <div  class="A_weather-text_column">
+                                <span class="A24_weather-temperature"></span>
+                                <span class="A24_weather-feel"></span>
+                                <span class="A24_weather-main"></span>
+                            </div>
+                            <!-- <span class="A24_weather-temperature"></span>
+                            <span class="A24_weather-feel"></span>
+                            <span class="A24_weather-main"></span> -->
+                            <div>
+                                <img src="" class="A24-icon">
+                            </div>
+                        </div>
                     </div>
                 </div>
               
@@ -162,11 +180,17 @@
         
     </main>
 
-    <script src="clock.js"></script>
-    <script src="user_name.js"></script>
-    <script src="weather.js"></script>
-    <script src="toDo.js"></script>
-    <script src="music.js"></script>
-    <script src="background.js"></script>
+    <script src="JavaScript/clock.js"></script>
+    <script src="JavaScript/user_name.js"></script>
+    <script src="JavaScript/weather.js"></script>
+    <script src="JavaScript/toDo.js"></script>
+    <script src="JavaScript/music.js"></script>
+    <script src="JavaScript/background.js"></script>
+    <script src="JavaScript/calender.js"></script>
+    <script src="week_weather.js"></script>
+    <script
+      src="https://kit.fontawesome.com/188f7f5ed5.js"
+      crossorigin="anonymous"
+    ></script>
 </body>
 </html>

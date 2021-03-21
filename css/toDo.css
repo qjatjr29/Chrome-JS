@@ -1,8 +1,10 @@
 .div3 h3{
+    font-family: 'Courier Prime', monospace;
     box-sizing: border-box;
     margin:3px;
 }
 .div3 ul{
+    font-family: 'Courier Prime', monospace;
     box-sizing: border-box;
     margin:8px;
 }

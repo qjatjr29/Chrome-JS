@@ -1,5 +1,6 @@
 const BGM_button = document.querySelector(".BGM_button");
-const BGM_NUMBER = 4;
+const BGM_icon =BGM_button.querySelector("i");
+const BGM_NUMBER = 5;
 var audio = new Audio();
 
 
@@ -11,7 +12,8 @@ function playBgm() {
     audio.src = `music/${randomNum + 1}.mp3`;
     audio.play();
     BGM_button.classList.add("playing");
-    BGM_button.innerHTML = "PAUSE";
+    // BGM_button.innerHTML = "PAUSE";
+    BGM_icon.classList.replace("fa-music","fa-pause");
     audio.addEventListener("ended", function () {
         randomNum = Math.floor(Math.random() * BGM_NUMBER);
         this.src = `music/${randomNum + 1}.mp3`;
@@ -22,7 +24,8 @@ function playBgm() {
 function pauseBgm() {
     console.log("x")
     audio.pause();
-    BGM_button.innerHTML = "BGM";
+    // BGM_button.innerHTML = "BGM";
+    BGM_icon.classList.replace("fa-pause","fa-music");
     // BGM_button.innerHTML = `<i class="fas fa-music fa-2x"></i>`;
 
     BGM_button.classList.remove("playing");
